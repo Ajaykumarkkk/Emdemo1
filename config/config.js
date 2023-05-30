@@ -19,12 +19,12 @@ CONFIG.db_name = 'zenbasket';
 CONFIG.db_user = 'local';
 CONFIG.db_password = 'local';
 
-CONFIG.max_pool_conn = process.env.MAX_POOL_CONN || '50';
-CONFIG.min_pool_conn = process.env.MIN_POOL_CONN || '0';
-CONFIG.conn_idle_time = process.env.CONN_IDLE_TIME || '10000';
+CONFIG.max_pool_conn = '50';
+CONFIG.min_pool_conn = '0';
+CONFIG.conn_idle_time = '10000';
 
-CONFIG.jwt_encryption = process.env.JWT_ENCRYPTION || 'please_change';
-CONFIG.jwt_expiration = process.env.JWT_EXPIRATION || '1800000';
-CONFIG.refresh_token_expiration = process.env.REFRESH_TOKEN_EXPIRATION || '1800000';
+CONFIG.jwt_encryption = 'please_change';
+CONFIG.jwt_expiration = '1800000';
+CONFIG.refresh_token_expiration = '1800000';
 
-CONFIG.secretKey = process.env.SECRETKEY || 'myapp';
+CONFIG.secretKey = 'myapp';
