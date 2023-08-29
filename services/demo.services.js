@@ -61,7 +61,8 @@ const sendMail = async function (data) {
             // to: 'ajay44@mailinator.com',
             to: data?.sender,
             subject: data?.subject,
-            text: data?.content
+            // text: data?.content
+            html: data?.content
         };
 
         let [updateCampaignMailErr, updateCampaignMail] = await to(mailTransporter.sendMail(mailDetails));
